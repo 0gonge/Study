@@ -1,5 +1,5 @@
 #Q2. 곱하기 혹은 더하기
-#idea : 곱하기가 무조건 더 크겠지 큰 수부터 곱하면 되겠구나.
+#idea1 : 곱하기가 무조건 더 크겠지 큰 수부터 곱하면 되겠구나.
 #idea2 : 곱하기의 치명적인 단점 : 1과 0일 경우에 0을 곱하면 0이 되고 1을 곱하는 건, 1을 더하는게 더 숫자가 커진다.
 #이 주의사항들에 유념해서 문제를 설계한다.
 
@@ -10,8 +10,8 @@ InputNumbers = list(map(int, input("숫자열을 입력하세요:")))
 InputNumbers.sort(reverse=True)
 length = len(InputNumbers)
 
-if length < 1 or length >21 :
-    raise ValueError("입력 숫자의 길이는 1 이상 20이하여야 합니다.")
+if length < 1 or length > 21 :
+    raise ValueError("입력 숫자의 길이는 1 이상 20 이하여야 합니다.")
 
 result = InputNumbers[0]
 
